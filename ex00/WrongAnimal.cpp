@@ -5,6 +5,11 @@ WrongAnimal::WrongAnimal(void)
 	return ;
 }
 
+void WrongAnimal::makeSound() const
+{
+	std::cout << "*Screams in WrongAnimal*" << std::endl;
+}
+
 void WrongAnimal::setType(std::string type)
 {
 	this->type = type;

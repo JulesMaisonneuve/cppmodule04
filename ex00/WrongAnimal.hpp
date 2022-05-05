@@ -10,10 +10,7 @@ class WrongAnimal
 		std::string type;
 	public:
 		WrongAnimal(void);
-		void makeSound() const
-		{
-			std::cout << "*Screams in WrongAnimal*" << std::endl;
-		};
+		void makeSound() const;
 		void setType(std::string type);
 		std::string getType(void) const;
 		~WrongAnimal(void);

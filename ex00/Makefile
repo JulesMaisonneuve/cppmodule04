@@ -1,5 +1,5 @@
 NAME	= animal
-FILES	= main.cpp Animal.cpp WrongAnimal.cpp
+FILES	= main.cpp Animal.cpp WrongAnimal.cpp Dog.cpp Cat.cpp
 OBJ		= $(FILES:%.cpp=%.o)
 CC		= clang++
 CFLAGS	= -Wall -Werror -Wextra -std=c++98

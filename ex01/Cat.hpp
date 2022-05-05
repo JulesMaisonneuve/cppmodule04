@@ -14,7 +14,6 @@ class Cat : public Animal
 		Cat(const Cat& D);
 		Cat& operator=(const Cat &other);
 		~Cat(void);
-		
 };
 
 #endif

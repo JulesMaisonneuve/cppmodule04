@@ -17,7 +17,7 @@ int main(void)
 	std::cout << "---------------------------------------------------------------------" << std::endl;
 	std::cout << "\e[1m*Array of animals*\e[0m" << std::endl;
 	std::cout << "---------------------------------------------------------------------" << std::endl;
-	Animal *Animals[20];
+	Animal *Animals[50];
 	for (int i = 0; i < 4; i++)
 		Animals[i] = new Dog;
 	for (int j = 4; j < 8; j++)

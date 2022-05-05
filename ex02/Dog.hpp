@@ -14,7 +14,6 @@ class Dog : public Animal
 		Dog(const Dog& D);
 		Dog& operator=(const Dog &other);
 		~Dog(void);
-		
 };
 
 #endif

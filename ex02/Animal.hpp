@@ -4,26 +4,12 @@
 # include <iostream>
 # include "Brain.hpp"
 
-class Brain
-{
-	private:
-		std::string ideas[100];
-	public:
-		Brain(void);
-		Brain(const Brain& B)
-		{
-			*this = B;
-			std::cout << "Brain copy constructor called" << std::endl;
-		}
-		~Brain(void);
-};
-
 class Animal
 {
 	private:
 	protected:
-		Animal(void);
 		std::string type;
+		Animal(void);
 	public:
 		Animal(const Animal& A)
 		{
@@ -43,37 +29,5 @@ class Animal
 		Animal& operator=(const Animal &other);
 		virtual ~Animal(void);
 };
-
-class Dog : public Animal
-{
-	private:
-		Brain *brain;
-	public:
-		Dog(void);
-		Dog(const Dog& D)
-		{
-			this->brain = NULL;
-			*this = D;
-		}
-		Dog& operator=(const Dog &other);
-		~Dog(void);
-		
-};
-
-class Cat : public Animal
-{
-	private:
-		Brain *brain;
-	public:
-		Cat(void);
-		Cat(const Cat& D)
-		{
-			this->brain = NULL;
-			*this = D;
-		}
-		Cat& operator=(const Cat &other);
-		~Cat(void);
-};
-
 
 #endif

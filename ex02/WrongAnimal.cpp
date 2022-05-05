@@ -2,7 +2,27 @@
 
 WrongAnimal::WrongAnimal(void)
 {
+	std::cout << "Default WrongAnimal constructor called" << std::endl;
+	this->type = "Default WrongAnimal type";
 	return ;
+}
+
+WrongAnimal& WrongAnimal::operator=(const WrongAnimal &other)
+{
+	if (this == &other)
+		return *this;
+	this->type = other.type;
+	return (*this);
+}
+
+WrongAnimal::WrongAnimal(const WrongAnimal &s)
+{
+	*this = s;
+}
+
+void WrongAnimal::makeSound() const
+{
+	std::cout << "*Screams in WrongAnimal*" << std::endl;
 }
 
 void WrongAnimal::setType(std::string type)
@@ -16,18 +36,8 @@ std::string WrongAnimal::getType(void) const
 	return (this->type);
 }
 
-WrongCat::WrongCat(void)
-{
-	this->type = "WrongCat";
-	return ;
-}
-
-WrongCat::~WrongCat(void)
-{
-	return ;
-}
-
 WrongAnimal::~WrongAnimal(void)
 {
+	std::cout << "WrongAnimal destructor called" << std::endl;
 	return ;
 }

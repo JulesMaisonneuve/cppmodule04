@@ -3,15 +3,18 @@
 
 # include "Animal.hpp"
 
+class Animal;
+
 class Cat : public Animal
 {
 	private:
+		Brain *brain;
 	public:
 		Cat(void);
-		Cat &operator=(const Cat &other);
-		Cat(const Cat &s);
-		void makeSound() const;
-		virtual ~Cat(void);
+		Cat(const Cat& D);
+		Cat& operator=(const Cat &other);
+		~Cat(void);
+		
 };
 
 #endif

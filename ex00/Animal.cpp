@@ -2,6 +2,8 @@
 
 Animal::Animal(void)
 {
+	std::cout << "Default Animal constructor called" << std::endl;
+	this->type = "Default Animal type";
 	return ;
 }
 
@@ -20,12 +22,7 @@ Animal::Animal(const Animal &s)
 
 void Animal::makeSound() const
 {
-	if (type == "Cat")
-		std::cout << "Meow" << std::endl;
-	else if (type == "Dog")
-		std::cout << "Woof Woof" << std::endl;
-	else
-		std::cout << "*Inaudible sound*" << std::endl;
+	std::cout << "*Inaudible sound*" << std::endl;
 }
 
 void Animal::setType(std::string type)
@@ -41,5 +38,6 @@ std::string Animal::getType(void) const
 
 Animal::~Animal(void)
 {
+	std::cout << "Animal destructor called" << std::endl;
 	return ;
 }

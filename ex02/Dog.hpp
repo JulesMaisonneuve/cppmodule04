@@ -13,7 +13,9 @@ class Dog : public Animal
 		Dog(void);
 		Dog(const Dog& D);
 		Dog& operator=(const Dog &other);
+		Brain *getBrain() const;
 		~Dog(void);
+		
 };
 
 #endif

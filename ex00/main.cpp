@@ -22,10 +22,10 @@ int main(void)
 	std::cout << "=====================================================================" << std::endl;
 	std::cout << "\e[1m*Copy assignement test*\e[0m" << std::endl;
 	std::cout << "=====================================================================" << std::endl;
-	std::cout << "Dog avant assignation à meta (Animal)  " << j->getType() << std::endl;
+	std::cout << "Type de Dog avant assignation à meta (Animal)	" << j->getType() << std::endl;
 	delete j;
 	j = meta;
-	std::cout << "Dog après assignation à meta (Animal) " << j->getType() << std::endl;
+	std::cout << "Type de Dog après assignation à meta (Animal)	" << j->getType() << std::endl;
 	std::cout << "=====================================================================" << std::endl;
 	std::cout << "\e[1m*WrongAnimal Tests*\e[0m" << std::endl;
 	std::cout << "=====================================================================" << std::endl;

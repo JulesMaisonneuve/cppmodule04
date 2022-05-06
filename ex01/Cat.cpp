@@ -10,8 +10,8 @@ Cat::Cat(void)
 
 Cat::Cat(const Cat& D)
 {
-    this->brain = NULL;
-    *this = D;
+    this->type = D.type;
+	this->brain = new Brain(*(D.brain));
 }
 
 Cat& Cat::operator=(const Cat &other)
@@ -25,6 +25,11 @@ Cat& Cat::operator=(const Cat &other)
 	// 	delete this->brain;
 	// this->brain = new Brain(*other.brain);
 	return *this;
+}
+
+Brain *Cat::getBrain() const
+{
+	return (this->brain);
 }
 
 Cat::~Cat(void)

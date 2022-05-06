@@ -11,6 +11,8 @@ class Brain
 		Brain(void);
 		Brain(const Brain& B);
         Brain &operator=(const Brain &other);
+		void setFirstIdea(const std::string &idea);
+		std::string getFirstIdea() const;
 		~Brain(void);
 };
 

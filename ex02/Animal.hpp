@@ -9,10 +9,10 @@ class Animal
 	private:
 	protected:
 		std::string type;
-	public:
 		Animal(void);
-		Animal &operator=(const Animal &other);
+	public:
 		Animal(const Animal &s);
+		Animal &operator=(const Animal &other);
 		virtual void makeSound() const;
 		void setType(std::string type);
 		std::string getType(void) const;

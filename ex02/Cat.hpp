@@ -13,6 +13,7 @@ class Cat : public Animal
 		Cat(void);
 		Cat(const Cat& D);
 		Cat& operator=(const Cat &other);
+		Brain *getBrain() const;
 		~Cat(void);
 };
 
